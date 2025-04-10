@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peak Go! - Transforma tu Vida</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #5C6BC0, #7986CB);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      animation: fadeInDown 1s ease-out;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      animation: fadeInUp 1s ease-out;
+    }
+    .button {
+      margin-top: 20px;
+      background-color: #fff;
+      color: #5C6BC0;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #ddd;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .intro {
+      text-align: center;
+    }
+    .intro h2 {
+      color: #5C6BC0;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .feature-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature-box:hover {
+      transform: scale(1.05);
+    }
+    .feature-box img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    .canvas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 40px;
+    }
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .box h3 {
+      margin-top: 0;
+      color: #3949AB;
+    }
+    footer {
+      background-color: #3949AB;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Peak Go!</h1>
+    <p>La app que te ayuda a alcanzar tus metas, superar vicios y crecer profesionalmente</p>
+    <button class="button" onclick="document.getElementById('canvas').scrollIntoView({behavior: 'smooth'})">Ver Lean Canvas</button>
+  </header>
+
+  <section class="intro">
+    <h2>¿Qué es Peak Go?</h2>
+    <p>
+      Peak Go! es una aplicación móvil innovadora diseñada para ayudarte a mejorar en todos los aspectos de tu vida: desde la disciplina personal y el crecimiento profesional, hasta la superación de adicciones. A través de retos gamificados, asesoramiento y una comunidad activa, te impulsamos a ser tu mejor versión.
+    </p>
+    <div class="features">
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Motivación">
+        <h4>Retos motivadores</h4>
+        <p>Desafíos diarios que te mantienen enfocado en tus objetivos.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Apoyo emocional">
+        <h4>Apoyo emocional</h4>
+        <p>Herramientas para controlar tus hábitos y mejorar tu salud mental.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995525.png" alt="Crecimiento profesional">
+        <h4>Desarrollo profesional</h4>
+        <p>Recursos y ejercicios para prepararte para el mundo laboral.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="canvas">
+    <h2 style="text-align: center;">Lean Canvas</h2>
+    <div class="canvas">
+      <div class="box">
+        <h3>Problemas</h3>
+        <ul>
+          <li>Falta de disciplina y motivación (Gen Z)</li>
+          <li>Dificultad para ocuparse con propósito (Adicciones)</li>
+          <li>Falta de empleo y herramientas laborales</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Segmentos de Clientes</h3>
+        <ul>
+          <li>Generación Z</li>
+          <li>Personas con adicciones</li>
+          <li>Profesionales desempleados</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Propuesta de Valor Única</h3>
+        <p>Peak Go! es la app que transforma tu vida: alcanza tus metas, supera tus vicios y evoluciona profesionalmente, compitiendo y creciendo junto a una comunidad que te impulsa.</p>
+      </div>
+      <div class="box">
+        <h3>Solución</h3>
+        <ul>
+          <li>Retos gamificados, comunidad y recordatorios motivacionales</li>
+          <li>Rutinas saludables y apoyo emocional básico</li>
+          <li>Objetivos laborales, recursos y formación</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Canales</h3>
+        <ul>
+          <li>TikTok, Instagram, YouTube (influencers)</li>
+          <li>Facebook, Google Ads, alianzas con psicólogos</li>
+          <li>LinkedIn, grupos de empleo, webinars</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Fuentes de Ingresos</h3>
+        <ul>
+          <li>Modelo freemium (app gratuita + premium)</li>
+          <li>Publicidad en la app</li>
+          <li>Alianzas y patrocinios</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Estructura de Costos</h3>
+        <ul>
+          <li>Desarrollo y mantenimiento</li>
+          <li>Marketing digital e influencers</li>
+          <li>Coaches, psicólogos y soporte</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Métricas Clave</h3>
+        <ul>
+          <li>Descargas activas</li>
+          <li>Conversión a premium</li>
+          <li>Retención y uso diario</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Ventaja Injusta</h3>
+        <p>Primera app que integra metas personales, superación de vicios y desarrollo profesional con gamificación y comunidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Peak Go! - Todos los derechos reservados.
+  </footer>
+</body>
+</html>
